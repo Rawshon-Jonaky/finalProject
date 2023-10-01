@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="dist/jquery.colorpanel.css" rel="stylesheet">
+    <link href="skins/default.css" id="cpswitch" rel="stylesheet">
+</head>
+<body>
+     <!--nav-start-->
+  <section class="nav-section">
+    <nav class="navbar navbar-expand-lg bg-dark bg-opacity-50 fixed-top">
+        <div class="container">
+          <img src="image-j/logo1.png" alt="image">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active fw-semibold text-white" aria-current="page" href="#">HOME</a>
+              <a class="nav-link fw-semibold text-white" href="#">SHOP</a>
+              <a class="nav-link fw-semibold text-white" href="#">LOOKBOOK</a>
+              <a class="nav-link text-white" href="#">ABOUT US</a>
+              <a class="nav-link text-white" href="#">CONTACT US</a>
+              <button type="button" class="btn btn-dark position-relative cart-btn">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
+                0
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+  <!--nav-end-->
+
+   <!--banner-section-start-->
+   <section id="hero" class="position-relative">
+    
+    <img src="image-j/banner-model2.png" class="w-100" alt="image">
+    <div class="container position-absolute top-50 start-50 translate-middle">
+      <h1 class="d-flex flex-column text-white align-items-center">CONTACT US</h1>
+    </div>
+
+  </section>
+  <!--banner-section-end-->
+
+  <!--question-section-start-->
+  <section class="question">
+    <div class="container">
+        <div class="row">
+            <div class="column-8">
+                <h1>GOT QUESTIONS</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, iusto, fuga nobis fugiat amet voluptatum suscipit blanditiis qui laboriosam, rem officia velit nulla molestiae sit? Eveniet esse est quibusdam laborum odio eos, quia cupiditate modi nihil quisquam, in temporibus vitae, alias possimus quasi. Fuga ratione inventore culpa similique modi. Quia?</P>
+                <nav>
+                    <div class="nav nav-tabs pt-5  fw-semibold" id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">FORM</button>
+                      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">ADDRESS</button>
+                      
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+  <!--question-section-end-->
+
+
+
+<!--color-->
+<div class="container">
+    <div id="wrapper" class="container">
+   </div>
+   <div id="colorPanel" class="colorPanel">
+    <a id="cpToggle" href="#"></a>
+    <ul></ul>
+  </div>
+  </div>
+  <!--color-->
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="dist/jquery.colorpanel.js"></script>
+<script>
+ $('#colorPanel').ColorPanel({
+                styleSheet: '#cpswitch'
+                , animateContainer: '#wrapper'
+                , colors: {
+                    '#101010': 'skins/default.css'
+                    , '#16a085': 'skins/seagreen.css'
+
+                , }
+            });
+  </script>
+</body>
+</html>
